@@ -1,0 +1,107 @@
+body{
+    font-family: sans-serif;
+}
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+.block{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.box{
+    width: 23%;
+    box-sizing: border-box;
+    border: 1px solid #f4f4f6;
+    margin-bottom: 2rem;
+}
+.box a{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #909090;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.75rem 0.75rem 0.75rem;
+    display: inline-block;
+}
+.box > div{
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+}
+.box > div div:first-child{
+    width: 50%;
+    color: #909090;
+}
+.box > div div:last-child{
+    width: #909090;
+    color: #ffd35f;
+    text-align: right;
+    font-size: 24px;
+}
+.box img{
+    width: 100%;
+}
+.box{
+    position: relative;
+    overflow: hidden;
+}
+.badge{
+    background-color: #404040;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    right: -25px;
+    top: 12px;
+    transform: rotate(45deg);
+    font-size: 12px;
+    padding: 6px 2rem !important;
+}
+/* .ov{
+    width: 250px;
+    height: 75px;
+    border: 1px solid brown;
+    overflow: auto;
+} */
+@media (min-width: 0) and (max-width: 474.9px){
+    .wrapper{
+        width: 100%;
+    }
+    .box{
+        width: 100%;
+        text-align: center;
+    }
+    .box > div {
+        display: block;
+    }
+    .box > div div:first-child{
+        width: 100%;
+        margin: 0.60rem;
+    }
+    .box > div div:last-child{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (min-width: 475px) and (max-width: 775.9px){
+    .wrapper{
+        width: 100%;
+    }
+    .box{
+        width: 48%;
+    }
+}
+@media (min-width: 777px) and (max-width: 989.9px){
+    .wrapper{
+        width: 678px;
+    }
+    .box{
+        width: 48%;
+    }
+}
+@media (min-width: 990) and (max-width: 1200px){
+    .wrapper{
+        width: 890px;
+    }
+}
